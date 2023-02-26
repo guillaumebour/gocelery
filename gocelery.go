@@ -166,3 +166,7 @@ func (ar *AsyncResult) Ready() (bool, error) {
 	ar.result = val
 	return (val != nil), nil
 }
+
+func (ar *AsyncResult) ClearResult() {
+	ar.result = nil
+}
